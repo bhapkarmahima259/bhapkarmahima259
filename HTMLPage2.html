@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    value1:<input type="number" id="val1" /><br />
+    value2:<input type="number" id="val2" /><br />
+    result:<input type="number" id="textres" /><br />
+    <input type="button" id="btn" value="add" onclick="add();"/><br />
+    <input type="button" id="btn_1" value="sub" onclick="sub()" /><br />
+    <input type="button" id="btn_2" value="mul" onclick="mul()"/><br />
+    <input type="button" id="btn_3" value="div" onclick="div()"/><br />
+    <input type="button" id="btn_4" value="reset"  onclick="reset();"/><br />
+    <script>
+        function add(){
+            var a=document.getElementById("val1").value;
+            var b=document.getElementById("val2").value;
+            a=parseInt(a);
+            b=parseInt(b);
+           var result=a+b;
+            document.getElementById("textres").value=result;
+        }
+
+        function sub(){
+    var a=document.getElementById("val1").value;
+    var b=document.getElementById("val2").value;
+    a=parseInt(a);
+    b=parseInt(b);
+   var result=a-b;
+    document.getElementById("textres").value=result;
+       }
+
+       function mul(){
+    var a=document.getElementById("val1").value;
+    var b=document.getElementById("val2").value;
+    a=parseInt(a);
+    b=parseInt(b);
+   var result=a*b;
+    document.getElementById("textres").value=result;
+      }
+
+           function div(){
+    var a=document.getElementById("val1").value;
+    var b=document.getElementById("val2").value;
+    a=parseInt(a);
+    b=parseInt(b);
+   var result=a/b;
+    document.getElementById("textres").value=result;
+    }
+
+    function reset(){
+    document.getElementById("val1").value="";
+   document.getElementById("val2").value="";
+    
+    document.getElementById("textres").value="";
+}
+    </script>
+</body>
+</html>
